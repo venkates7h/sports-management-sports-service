@@ -1,0 +1,50 @@
+2021-07-30 23:41:34,867 INFO com.sports.items.SportsNamesServiceApplication [main] Starting SportsNamesServiceApplication using Java 1.8.0_301 on VENKATESH-PERSONAL with PID 23156 (D:\microservices-springboot-sports-service\sportsNamesService\target\classes started by venka in D:\microservices-springboot-sports-service\sportsNamesService)
+2021-07-30 23:41:34,869 DEBUG com.sports.items.SportsNamesServiceApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-07-30 23:41:34,870 INFO com.sports.items.SportsNamesServiceApplication [main] No active profile set, falling back to default profiles: default
+2021-07-30 23:41:36,855 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-07-30 23:41:36,856 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-07-30 23:41:36,965 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-07-30 23:41:37,247 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-30 23:41:37,371 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-30 23:41:37,413 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-30 23:41:37,465 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-30 23:41:37,606 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-30 23:41:37,711 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-07-30 23:41:38,234 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-30 23:41:40,457 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2021-07-30 23:41:40,462 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2021-07-30 23:41:40,485 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2021-07-30 23:41:40,986 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2021-07-30 23:41:40,989 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2021-07-30 23:41:40,991 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-07-30 23:41:40,996 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1627668700995 with initial instances count: 3
+2021-07-30 23:41:41,002 INFO com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1627668701002, current=UP, previous=STARTING]
+2021-07-30 23:41:41,005 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SPORTS-NAMES-SERVICE/VENKATESH-PERSONAL:SPORTS-NAMES-SERVICE:9001: registering service...
+2021-07-30 23:41:41,056 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SPORTS-NAMES-SERVICE/VENKATESH-PERSONAL:SPORTS-NAMES-SERVICE:9001 - registration status: 204
+2021-07-30 23:41:41,183 INFO com.sports.items.SportsNamesServiceApplication [main] Started SportsNamesServiceApplication in 6.758 seconds (JVM running for 7.423)
+2021-07-30 23:43:41,067 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9001-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-30 23:43:41,149 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-6] saving a sport nameSports(sportId=null, sportName=cricket, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:43:41,274 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-6] saved a sport nameSports(sportId=1, sportName=cricket, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:44:33,810 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-4] saving a sport nameSports(sportId=null, sportName=carrom, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:44:33,812 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-4] saved a sport nameSports(sportId=2, sportName=carrom, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:46:40,501 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-07-30 23:51:40,505 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-07-30 23:52:11,610 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-8] saving a sport nameSports(sportId=null, sportName=dootball, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:52:11,614 INFO com.sports.items.controller.SportsItemsController [http-nio-9001-exec-8] saved a sport nameSports(sportId=3, sportName=dootball, sportType=outdoor, sportBoard=BCCI, numberOfPlayers=11, departmentId=sportcricket)
+2021-07-30 23:52:39,641 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(2)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1627669359641, current=DOWN, previous=UP]
+2021-07-30 23:52:39,641 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SPORTS-NAMES-SERVICE/VENKATESH-PERSONAL:SPORTS-NAMES-SERVICE:9001: registering service...
+2021-07-30 23:52:39,655 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SPORTS-NAMES-SERVICE/VENKATESH-PERSONAL:SPORTS-NAMES-SERVICE:9001 - registration status: 204
+2021-07-30 23:52:39,738 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [RMI TCP Connection(2)-127.0.0.1] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-07-30 23:52:39,746 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-07-30 23:52:39,749 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-07-30 23:52:39,751 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(2)-127.0.0.1] Shutting down DiscoveryClient ...
+2021-07-30 23:52:42,769 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(2)-127.0.0.1] Unregistering ...
+2021-07-30 23:52:42,770 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor shutting down, can't accept the task
+2021-07-30 23:52:42,775 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(2)-127.0.0.1] DiscoveryClient_SPORTS-NAMES-SERVICE/VENKATESH-PERSONAL:SPORTS-NAMES-SERVICE:9001 - deregister  status: 200
+2021-07-30 23:52:42,784 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(2)-127.0.0.1] Completed shut down of DiscoveryClient

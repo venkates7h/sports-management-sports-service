@@ -1,0 +1,7 @@
+FROM java:8
+
+EXPOSE 9001
+
+ADD target/*.jar sportsNamesService-0.0.1.jar
+
+ENTRYPOINT ["java","-jar","sportsNamesService-0.0.1.jar"]
