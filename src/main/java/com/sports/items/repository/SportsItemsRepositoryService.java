@@ -8,6 +8,8 @@ import com.sports.items.entity.Sports;
 @Repository
 public interface SportsItemsRepositoryService extends JpaRepository<Sports, Long>{
 
+	//Sports findSportNameById(Long sportId);
+
 	//Sports findSportById(Long sportId);
 
 }

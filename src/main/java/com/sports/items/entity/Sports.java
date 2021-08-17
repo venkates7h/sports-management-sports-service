@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="sports_names")
 public class Sports {
 	/**
 	 * 
@@ -27,7 +29,7 @@ public class Sports {
 	private String sportType;
 	private String sportBoard;
 	private Long numberOfPlayers;
-	private String departmentId;
+	private String sportsDepartmentId;
 	public Long getSportId() {
 		return sportId;
 	}
@@ -59,10 +61,10 @@ public class Sports {
 		this.numberOfPlayers = numberOfPlayers;
 	}
 	public String getDepartmentId() {
-		return departmentId;
+		return sportsDepartmentId;
 	}
-	public void setDepartmentId(String departmentId) {
-		this.departmentId = departmentId;
+	public void setDepartmentId(String sportsDepartmentId) {
+		this.sportsDepartmentId = sportsDepartmentId;
 	}
 
 }

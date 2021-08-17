@@ -1,8 +1,11 @@
 package com.sports.items.service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Service;
 
 import com.sports.items.entity.Sports;
@@ -18,8 +21,31 @@ public class SportsService {
 		return sportsItemsRepositoryService.save(sportName);
 	}
 
-	public Optional<Sports> getSportNameById(Long sportId) {
-		return sportsItemsRepositoryService.findById(sportId);
+	//public Sports getSportNameById(Long sportId) {
+		//Sports sports = sportsItemsRepositoryService.findSportNameById(sportId);
+		//return sports;
+	//}
+
+	public List<Sports> findAllSports() throws Exception{
+		
+		List<Sports> sportsList = new ArrayList<Sports>();
+		try {
+			sportsList = sportsItemsRepositoryService.findAll();
+			if(!sportsList.isEmpty()|| sportsList!=null) {
+				
+			}
+		}catch(Exception e){
+			
+		}
+		
+		return sportsList;
 	}
 
+	public List<Sports> getAvailableSports() {
+		List<Sports> availableSportsList= sportsItemsRepositoryService.findAll();
+		if(!availableSportsList.isEmpty()) {
+			return availableSportsList;
+		}else 
+			return null;
+	}
 }
