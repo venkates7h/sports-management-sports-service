@@ -1,7 +1,7 @@
-FROM java:8
+FROM openjdk:8
 
 EXPOSE 9001
 
-ADD target/*.jar sportsNamesService-0.0.1.jar
+ADD target/sports-management-sports-service.jar sports-management-sports-service.jar
 
-ENTRYPOINT ["java","-jar","sportsNamesService-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","/sports-management-sports-service.jar"]
